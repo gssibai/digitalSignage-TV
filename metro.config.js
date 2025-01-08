@@ -1,8 +1,9 @@
 // Learn more https://docs.expo.io/guides/customizing-metro
-const { getDefaultConfig } = require('expo/metro-config');
+ const { getDefaultConfig } = require('expo/metro-config');
 
 /** @type {import('expo/metro-config').MetroConfig} */
-const config = getDefaultConfig(__dirname); // eslint-disable-line no-undef
+  const config = getDefaultConfig(__dirname); // eslint-disable-line no-undef
+
 
 // When enabled, the optional code below will allow Metro to resolve
 // and bundle source files with TV-specific extensions
@@ -20,4 +21,7 @@ if (process.env?.EXPO_TV === '1') {
   config.resolver.sourceExts = tvSourceExts;
 }
 
+
 module.exports = config;
+
+

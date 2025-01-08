@@ -18,17 +18,26 @@
         }
       ],
       "expo-router",
-      "expo-font"
+      "expo-font",
+      [
+      "expo-location",
+     
+        {
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ]
     ],
     "android": {
       "splash": {
         "image": "./assets/images/splash.png"
-      }
+      },
+      "package": "com.anonymous.DSTV"
     },
     "ios": {
       "splash": {
         "image": "./assets/images/splash.png"
-      }
+      },
+      "bundleIdentifier": "com.anonymous.DSTV"
     },
     "experiments": {
       "typedRoutes": true
